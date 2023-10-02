@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA42C0E82AC9845F00203BC0 /* AppIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA42C0E72AC9845F00203BC0 /* AppIconView.swift */; };
 		AAFDB2652AC8F8A800E6C94C /* IconMakerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFDB2642AC8F8A800E6C94C /* IconMakerApp.swift */; };
 		AAFDB2672AC8F8A800E6C94C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFDB2662AC8F8A800E6C94C /* ContentView.swift */; };
 		AAFDB2692AC8F8AA00E6C94C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAFDB2682AC8F8AA00E6C94C /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA42C0E72AC9845F00203BC0 /* AppIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconView.swift; sourceTree = "<group>"; };
 		AAFDB2612AC8F8A800E6C94C /* IconMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IconMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAFDB2642AC8F8A800E6C94C /* IconMakerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconMakerApp.swift; sourceTree = "<group>"; };
 		AAFDB2662AC8F8A800E6C94C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				AAFDB2642AC8F8A800E6C94C /* IconMakerApp.swift */,
 				AAFDB2662AC8F8A800E6C94C /* ContentView.swift */,
+				AA42C0E72AC9845F00203BC0 /* AppIconView.swift */,
 				AAFDB2682AC8F8AA00E6C94C /* Assets.xcassets */,
 				AAFDB26A2AC8F8AA00E6C94C /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			files = (
 				AAFDB2672AC8F8A800E6C94C /* ContentView.swift in Sources */,
 				AAFDB2652AC8F8A800E6C94C /* IconMakerApp.swift in Sources */,
+				AA42C0E82AC9845F00203BC0 /* AppIconView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,8 +276,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"IconMaker/Preview Content\"";
+				DEVELOPMENT_TEAM = 39XWXK5875;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "このアプリはフォトライブラリーにアクセスします";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -300,8 +306,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"IconMaker/Preview Content\"";
+				DEVELOPMENT_TEAM = 39XWXK5875;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "このアプリはフォトライブラリーにアクセスします";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
