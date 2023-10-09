@@ -22,14 +22,13 @@ struct AppIconView: View {
                     .foregroundColor(.white)
                     .padding(geometry.size.width * 0.15) // 余白を多めにとる(全体の15%程度)
             }
-            .offset(y: -2) // 上部の余白補正
         }
     }
 }
 
 #Preview {
     VStack {
-        AppIconView(systemName: "square.and.pencil.circle", color: Color.red.gradient)
+        AppIconView(systemName: "pencil.and.outline", color: Color.orange.gradient)
             .frame(width: 150, height: 150)
         AppIconView(systemName: "tram", color: Color.green.gradient)
             .frame(width: 150, height: 150)

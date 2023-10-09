@@ -9,17 +9,24 @@ import SwiftUI
 import Photos
 
 struct ContentView: View {
-    var iconName = "square.and.pencil.circle"
-    var iconColor = Color.red.gradient
+    var iconName = "pencil.and.outline"
+    var iconColor = Color.orange.gradient
+    @State private var showAlert = false
+    @State private var alertMessage = ""
     
     var body: some View {
         VStack {
+            Spacer()
             AppIconView(systemName: iconName, color: iconColor)
                 .frame(width: 300, height: 300)
-            
+            Text(iconName)
+            Spacer()
             Button("Save Image") {
                 saveToPhotos()
             }
+        }
+        .alert(isPresented: $showAlert) {
+            Alert(title: Text("Result"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
         }
     }
     
@@ -29,7 +36,10 @@ struct ContentView: View {
             
             let hostingController = UIHostingController(
                 rootView: AppIconView(systemName: iconName, color: iconColor)
-                    .frame(width: viewSize.width, height: viewSize.height))
+                    .frame(width: viewSize.width, height: viewSize.height)
+                    .offset(CGSize(width: 0, height: -12))
+                    .background(iconColor)
+            )
             
             hostingController.view.frame = CGRect(origin: .zero, size: viewSize)
             hostingController.view.backgroundColor = .clear
@@ -43,7 +53,11 @@ struct ContentView: View {
                     creationRequest.addResource(with: .photo, data: data, options: nil)
                 }) { success, error in
                     if let error = error {
-                        print("Error saving the image: \(error)")
+                        alertMessage = "Error saving the image: \(error)"
+                        showAlert = true
+                    } else {
+                        alertMessage = "Success saving image"
+                        showAlert = true
                     }
                 }
             }
